@@ -60,10 +60,10 @@ class DbManagerServiceProvider extends ServiceProvider
             __DIR__ . '/../config/db-manager.php' => config_path('db-manager.php'),
         ], 'db-manager-config');
 
-        // Views
-        $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/db-manager'),
-        ], 'db-manager-views');
+        // Views — uncomment to allow users to publish and override package views
+        // $this->publishes([
+        //     __DIR__ . '/../resources/views' => resource_path('views/vendor/db-manager'),
+        // ], 'db-manager-views');
 
         // Customisable service provider stub
         $this->publishes([
