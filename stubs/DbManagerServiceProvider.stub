@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Providers;
+
+use MahmoudAbdElhalim\DbManager\DbManagerServiceProvider as BaseProvider;
+use Illuminate\Support\Facades\Gate;
+
+class DbManagerServiceProvider extends BaseProvider
+{
+    /**
+     * Bootstrap any package services.
+     *
+     * Override this method to add custom authorization logic, share extra
+     * view data, or perform any other boot-time setup specific to your app.
+     */
+    public function boot(): void
+    {
+        parent::boot();
+
+        // Example: restrict access beyond the default middleware by adding a Gate.
+        // Gate::define('viewDbManager', function ($user) {
+        //     return $user->isAdmin();
+        // });
+    }
+
+    /**
+     * Override the middleware stack for the DB Manager routes.
+     *
+     * By default this reads config('db-manager.middleware'). Return a custom
+     * array here to hard-code the middleware for this application.
+     */
+    // protected function middleware(): array
+    // {
+    //     return ['web', 'auth', 'can:viewDbManager'];
+    // }
+}
