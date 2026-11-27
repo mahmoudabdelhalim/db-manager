@@ -24,8 +24,6 @@
 
 **DB Manager** is a beautiful, full-featured Laravel package that brings a phpMyAdmin-style database management UI directly into your Laravel application — no separate installation, no separate authentication. Browse tables, run SQL queries, manage structure, insert and edit rows, import/export databases — all from a clean, modern interface protected by your own middleware stack.
 
-**DB Manager** is a beautiful, full-featured Laravel package that brings a phpMyAdmin-style database management UI directly into your Laravel application — no separate installation, no separate authentication. Browse tables, run SQL queries, manage structure, insert and edit rows, import/export databases — all from a clean, modern interface protected by your own middleware stack.
-
 ---
 
 ## ✨ Features
